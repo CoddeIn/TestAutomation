@@ -1,4 +1,4 @@
-package ooademo.message;
+package ooademo.domain.message;
 
 public class IntMessage implements Message{
     private int body;

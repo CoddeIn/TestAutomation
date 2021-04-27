@@ -1,8 +1,9 @@
 package ooademo.controler;
 
+import ooademo.domain.SeverityLevel;
 import ooademo.filter.MessageFilter;
 import ooademo.filter.SeverityMessageFilter;
-import ooademo.message.Message;
+import ooademo.domain.message.Message;
 import ooademo.printer.FileMessagePrinter;
 import ooademo.printer.MessagePrinter;
 
@@ -15,7 +16,7 @@ public class Logger extends ValidatingLogger {
         this.printer = printer;
     }
 
-    public void log(Message message, int severity){
+    public void log(Message message, SeverityLevel severity){
         this.validate(message);
         if (filter.filter(message, severity)){
             printer.print(message);

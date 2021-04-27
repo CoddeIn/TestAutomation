@@ -1,6 +1,6 @@
 package ooademo.printer;
 
-import ooademo.message.Message;
+import ooademo.domain.message.Message;
 
 public class FileMessagePrinter implements MessagePrinter {
     private final String filename;

@@ -1,6 +1,6 @@
 package ooademo.controler;
 
-import ooademo.message.Message;
+import ooademo.domain.message.Message;
 
 public abstract class ValidatingLogger {
     protected void validate(Message message){
