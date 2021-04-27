@@ -1,5 +1,11 @@
 package ooademo;
 
+import ooademo.controler.Logger;
+import ooademo.filter.SeverityMessageFilter;
+import ooademo.message.IntMessage;
+import ooademo.message.StringMessage;
+import ooademo.printer.FileMessagePrinter;
+
 public class ApplicationFramework {
     public static void main (String[] args){
         final Logger logger = new Logger(

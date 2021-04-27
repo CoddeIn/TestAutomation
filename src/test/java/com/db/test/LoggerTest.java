@@ -1,7 +1,7 @@
 package com.db.test;
 /*
 
-import ooademo.Logger;
+import ooademo.controler.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

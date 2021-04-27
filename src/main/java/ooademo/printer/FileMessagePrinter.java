@@ -1,4 +1,6 @@
-package ooademo;
+package ooademo.printer;
+
+import ooademo.message.Message;
 
 public class FileMessagePrinter implements MessagePrinter {
     private final String filename;
