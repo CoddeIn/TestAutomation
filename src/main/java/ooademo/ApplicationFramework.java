@@ -6,11 +6,10 @@ public class ApplicationFramework {
                 new SeverityMessageFilter(2),
                 new FileMessagePrinter("out.log")
         );
-        logger.log("Str0",0);
-        logger.log("Str1",1);
-        logger.log("Str2",2);
-        logger.log(null,2);
-        logger.log("Str1",0);
+        LoggerFacade.log(1,0);
+        LoggerFacade.log("Str message", 1);
+        logger.log(new IntMessage(1),0);
+        logger.log(new StringMessage("Str message object"), 1);
     }
 
 }

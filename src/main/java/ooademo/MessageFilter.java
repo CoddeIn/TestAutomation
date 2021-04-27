@@ -1,5 +1,5 @@
 package ooademo;
 
 public interface MessageFilter {
-    boolean filter(String message, int severity);
+    boolean filter(Message message, int severity);
 }

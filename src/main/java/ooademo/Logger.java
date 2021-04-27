@@ -9,7 +9,7 @@ public class Logger extends ValidatingLogger {
         this.printer = printer;
     }
 
-    public void log(String message, int severity){
+    public void log(Message message, int severity){
         this.validate(message);
         if (filter.filter(message, severity)){
             printer.print(message);
